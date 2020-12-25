@@ -1,0 +1,124 @@
+.main-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 80px;
+  z-index: 99;
+  height: 80px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(36, 41, 66, 0.1);
+}
+.main-header .fas {
+  font-size: 32px;
+  color: royalblue;
+  line-height: 80px;
+}
+.main-header a span {
+  line-height: 80px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #666;
+}
+.main-header label,
+.main-header a i {
+  cursor: pointer;
+  display: none;
+}
+.main-header .fas:focus,
+.main-header label:focus {
+  outline: none;
+}
+#logo {
+  display: block;
+  line-height: 1;
+  max-width: 200px;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.menus ul {
+  display: flex;
+  flex-direction: row;
+}
+.menus li {
+  display: inline;
+  line-height: 80px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #666;
+  padding: 0 10px;
+  cursor: pointer;
+  transition: 0.3s all ease-in;
+}
+.menus li.lg {
+  color: limegreen;
+}
+.menus li.login {
+  display: none;
+}
+@media (max-width: 920px) {
+  .main-header {
+    padding: 0 40px;
+  }
+  .main-header label,
+  .main-header a i {
+    display: block;
+  }
+  .main-header a span {
+    display: none;
+  }
+  .main-header nav {
+    display: block;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(135deg, #1c1e26 0%, #202037 100%);
+    z-index: 100;
+    transition: 0.3s all ease-in-out;
+  }
+  .main-header label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 100vh;
+    background-color: #1c1e26aa;
+    transition: 0.3s all ease-in-out;
+  }
+  #ham:checked ~ label::after {
+    width: calc(100vw - 250px);
+    left: 250px;
+  }
+  #ham:checked ~ nav {
+    left: 0;
+  }
+  .menus ul {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .menus li {
+    line-height: 1;
+    padding: 15px;
+    color: #fff;
+    display: block;
+  }
+  .menus li.lg {
+    color: #fff;
+  }
+  .menus li.login {
+    color: #ffd262;
+    display: block;
+  }
+  .menus li:hover {
+    background-color: #ffffff44;
+  }
+}
+@media (max-width: 720px) {
+  .main-header {
+    padding: 0 20px;
+  }
+}

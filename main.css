@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+@media screen and (max-width: 960px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 540px) {
+  html {
+    font-size: 12px;
+  }
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-size: 1rem;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+a,
+button {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s linear;
+}
+input:focus {
+  outline: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body > header {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.hero-title {
+  text-align: left;
+  max-width: 845px;
+  text-align: center;
+  width: 100%;
+  float: none;
+  margin: 0 auto 2.1875rem;
+  color: #ffffff;
+}
+.main-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  display: inline-block;
+  padding: 0;
+  color: #ffffff;
+  margin-bottom: 13px;
+  line-height: 1.2;
+}
+.hero {
+  background: url(images/hero-bg.png) center center no-repeat,
+    linear-gradient(135deg, #3b88f7 0%, #8b8bf9 100%);
+  position: relative;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  float: left;
+  padding: 8.4375rem 0 6.25rem;
+  text-align: center;
+  width: 100%;
+}
+.hero .main-text {
+  font-size: 1.5rem;
+  line-height: 2.375rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+.hero .search {
+  width: 500px;
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+  margin-bottom: 17px;
+  padding: 1px;
+  background: #fff;
+  border-radius: 46px;
+}
+.hero .search:focus-within {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.15);
+}
+.hero .search input {
+  width: 100%;
+  border: 0;
+  border-radius: inherit;
+  padding: 0 20px;
+  line-height: 46px;
+  transition: 0.1s all ease-in;
+}
+.hero .search input:focus {
+  font-size: 16px;
+  font-weight: 600;
+}
+.hero .search input::-webkit-input-placeholder {
+  color: rgba(36, 41, 66, 0.75);
+}
+.hero .search button {
+  color: #6d728b;
+  position: absolute;
+  right: 6px;
+  top: 3px;
+  border: none;
+  background-color: transparent;
+  border-radius: 3px;
+  height: 43px;
+  width: 43px;
+  font-size: 17px;
+  cursor: pointer;
+}
+.hero .popular {
+  font-size: 15px;
+  line-height: 1;
+  margin-bottom: 2.5rem;
+}
+.hero .popular a,
+.hero .popular span {
+  color: #fff;
+  margin-right: 16px;
+}
+.hero .popular a:last-child {
+  margin-right: 0;
+}
+.hero .popular a:hover {
+  color: #ffd262;
+  border-bottom: 1px dotted;
+}
+.hero .signup {
+  text-align: center;
+  margin-top: 13px;
+}
+.hero .signup .or {
+  margin-top: 0;
+  width: 100%;
+  float: left;
+}
+.hero .signup .link {
+  font-size: 15px;
+  border-bottom: 1px dashed;
+}
+.button,
+a.button {
+  border: medium none;
+  border-spacing: 0;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 48px;
+  font-size: 16px;
+  border-radius: 46px;
+  padding: 0 25px;
+  display: inline-block;
+  color: #fff;
+  -webkit-appearance: none;
+  background-size: 100% 100%;
+  transition: all 0.35s ease-in-out;
+}
+.button:hover,
+a.button:hover {
+  color: #fff;
+}
+.button.yellow,
+a.button.yellow {
+  background: #ffd262;
+}
+.button.yellow:hover,
+a.button.yellow:hover {
+  background: #ffc639;
+}
+.button.yellow,
+a.button.yellow {
+  color: #333;
+}
+.button.yellow:hover,
+a.button.yellow:hover {
+  color: #333;
+}
+a:hover {
+  color: #3b88f7;
+}
+button {
+  margin: 0;
+}
+
+.dark {
+  color: #fff;
+  background: linear-gradient(135deg, #1c1e26 0%, #202037 100%);
+}
+.grow {
+  background: url(images/graph-bg.svg) right bottom no-repeat,
+    linear-gradient(135deg, #1c1e26 0%, #202037 100%);
+}
+section:last-child {
+  padding-bottom: 5em;
+  clear: both;
+}
