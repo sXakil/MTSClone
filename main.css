@@ -202,6 +202,5 @@ button {
     linear-gradient(135deg, #1c1e26 0%, #202037 100%);
 }
 section:last-child {
-  padding-bottom: 5em;
   clear: both;
 }
